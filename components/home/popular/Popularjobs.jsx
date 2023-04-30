@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
@@ -19,6 +19,9 @@ const Popularjobs = () => {
     query: "React Developer",
     num_pages: 1,
   });
+
+  const [selectedJob, setSelectedJob] = useState();
+  const handleCardPress = (item) => {};
 
   return (
     <View style={styles.container}>
